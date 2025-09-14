@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&family=Bebas+Neue&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;700&display=swap');
 
 /* VARIÁVEIS */
+
 :root {
     --cor-fundo: #fff;
     --cor-texto: #000;
@@ -10,6 +11,7 @@
 }
 
 /* GERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +23,7 @@ body {
 }
 
 /* HEADER */
+
 .img-header {
     display: block;
     width: 100%;
@@ -93,6 +96,7 @@ body {
 }
 
 /* TOPO */
+
 .texto-topo {
     width: 669px;
     height: 465px;
@@ -280,6 +284,7 @@ body {
 }
 
 /* SEÇÃO MAIS VENDIDOS */
+
 .container-vendidos {
     margin-left: 80px;
 }
@@ -290,131 +295,6 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 56px;
-}
-
-/* CARDS */
-
-.cards-vendidos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    color: #000;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.btn-comprar {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 20px;
-  height: 40px;
-  min-width: 145px;
-  background: #000;
-  color: #fff;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn-comprar i {
-  font-size: 20px;
-  color: #fff;
-  line-height: 1;
-}
-
-.btn-comprar:hover {
-  transform: translateY(-2px);
-}
-
-.cards-vendidos coracao-icone {
-    position: absolute;
-    color: #000;
-    top: 20px;
-    right: 20px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.cards-vendidos i {
-    position: static;
-}
-
-.btn-wrap {
-  position: relative;
-  display: inline-block;
-}
-
-.btn-wrap::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  transform: translate(6px, 6px);
-  background: #fff;
-  border: 2px solid #000;
-  z-index: 0;
-}
-
-.cards-vendidos > div {
-    width: 350px;
-    height: 550px;
-    border-radius: 18px;
-    box-shadow: 0 10px 15px 0 rgba(5, 13, 29, 0.18);
-    padding: 10px;
-    position: relative;
-    text-align: center;
-}
-
-.card1 {
-    background: linear-gradient(0deg, #FFF 38.38%, #8BCEDB 83.19%);
-}
-
-.card2 {
-    background: linear-gradient(358deg, #FFF 33.21%, #C1C4C9 87.17%);
-}
-
-.card3 {
-    background: linear-gradient(0deg, #FFF 38.38%, #E6815C 83.19%);
-}
-
-.card4 {
-    background: linear-gradient(358deg, #F2F2F2 33.21%, #EBE9E9 87.17%);
-}
-
-.card1 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-}
-
-.card2 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    height: 360px;
-}
-
-.card3 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-}
-
-.card4 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
 }
 
 /* SEÇÃO CATEGORIAS EM DESTAQUE */
@@ -456,7 +336,9 @@ footer {
     height: 325px;
     margin-top: 100px;
 }
+
 /* FOOTER */
+
 .img-footer {
   display: block;
   width: 100%;
