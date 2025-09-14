@@ -22,11 +22,12 @@ Renomeei a pasta src/ para docs/ porque o GitHub Pages só aceita como raiz de p
 ```
 📂docs/
  ├── 📂assets/
- │   └── 📂images/
- │       ├── 📂footer/
- │       ├── 📂header/
- │       ├── 📂main/
- │       └── 📂nav/
+ │   ├── 📂images/
+ │   ├── 📂footer/
+ │   ├── 📂header/
+ │   ├── 📂main/
+ │   └── 📂nav/
+ ├── 📂components/
  ├── 📂css/
  │   ├── index.css
  │   └── 📂pages/
@@ -34,11 +35,9 @@ Renomeei a pasta src/ para docs/ porque o GitHub Pages só aceita como raiz de p
  └── index.html
 ```
 - assets/images/ → imagens separadas por seção (header, footer, main etc.).
-
+- components/ → seções que vão repetir.
 - css/ → estilos globais (index.css) e estilos de páginas.
-
 - pages/ → pasta reservada para futuras páginas adicionais.
-
 - index.html → página principal.
   
 ## Tecnologias Utilizadas
