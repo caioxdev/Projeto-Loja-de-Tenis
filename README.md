@@ -3,7 +3,7 @@
 > ⚠️ Esse projeto foi feito apenas com estudo de HTML E CSS, com foco em treinar layout,  
 > e organização de pastas.
 > Ainda está em desenvolvimento e poderá receber melhorias na parte de JavaScript futuramente.
-
+---
 ## Sobre o Projeto
 
 Este é um projeto de loja de tênis que simula a página inicial de um e-commerce, com os seguintes elementos:
