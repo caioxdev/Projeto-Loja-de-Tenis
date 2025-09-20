@@ -195,33 +195,33 @@ body {
 }
 
 .container-banner-topo .left .p1-left {
-    color: #003789;
+    color: #000000;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
 }
 
 .container-banner-topo .left .p2-left {
-    color: #003789;
+    color: #000000;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
 }
 
 .container-banner-topo .left, .right i {
-    color: #003789;
+    color: #000000;
     font-size: 40px;
 }
 
 .container-banner-topo .right .p1-right {
-    color: #003789;
+    color: #000000;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
 }
 
 .container-banner-topo .right .p2-right {
-    color: #003789;
+    color: #000000;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
@@ -347,12 +347,12 @@ body {
     position: static;
 }
 
-.btn-wrap {
+.btn-fundo {
   position: relative;
   display: inline-block;
 }
 
-.btn-wrap::after {
+.btn-fundo::after {
   content: "";
   position: absolute;
   inset: 0;
