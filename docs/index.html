@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./pages/comprar1.html">
     <title>Kichutes</title>
 </head>
@@ -30,7 +29,18 @@
                         <li><a class="links-header" href="#">Marcas</a></li>
                                             
                         <!-- DROPDOWN -->
-                        <li><a class="icones-header" href="#"><i class='bx bxs-user'></i></a></li>
+                        <li class="dropdown">
+                            <a class="icones-header" href="#">
+                            <i class='bx bxs-user'></i>
+                            </a>
+                            <div class="caixa-dropdwn">
+                                <p>[NOME]</p>
+                                <a href="#"><i class='bx bx-user'></i>  Meu perfil</a>
+                                <a href="#"><i class='bx bxs-cart'></i>  Carrinho</a>
+                                <a href="#"><i class='bx bx-help-circle'></i> Ajuda e Suporte</a>
+                                <a href="#"><i class='bx bx-log-out'></i> Sair</a>
+                            </div>
+                        </li>
 
                         <li><a class="icones-header" href="#"><i class='bx bxs-heart'></i></a></li>
                         <li><a class="icones-header" href="#"><i class='bx bxs-shopping-bag'></i></a></li>
@@ -95,7 +105,7 @@
                 </div>
             </div> <!-- fim- div - cards-marcas -->
         </section> <!-- FIM NAVEGUE POR MARCAS-->
-
+        
         <!-- MAIS VENDIDOS -->
         <section class="container-vendidos">
             <h2>Mais Vendidos</h2>
@@ -105,7 +115,7 @@
                     <img src="./assets/images/main/MaisVendidos/foto tenis adidas galaxy 7 masculino.png" alt="Foto adidas galaxy 7">
                     <p>TÊNIS ADIDAS GALAXY 7 - MASCULINO</p>
                     <p>R$ 399,99</p>
-                    <a href="comprar1.html">
+                    <a href="./pages/comprar1.html">
                         <div class="btn-fundo">
                             <button class="btn-comprar">COMPRAR <i class='bx bx-right-arrow-alt'></i></button>
                         </div>
