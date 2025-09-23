@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
     <title>Adidas - Kicompras</title>
 </head>
 <body>
+    <!-- CABEÇALHO -->
     <header>
         <div class="header-top"> <!-- inicio - div/caixa organizadora - header-top -->
             <div class="logo"> <!-- inicio - div - logo-->
@@ -18,71 +20,81 @@
                 <i class='bx bx-search'></i>
             </div> <!-- fim - div - caixa de pesquisa -->
             <nav class="nav-header"> <!-- inicio - nav - header -->
-                    <ul>
-                        <li><a class="links-header" href="#">Tênis</a></li>
-                        <li><a class="links-header" href="#">Novidades</a></li>
-                        <li><a class="links-header" href="#">Acessórios</a></li>
-                        <li><a class="links-header" href="#">Marcas</a></li>
-                                            
-                        <!-- DROPDOWN -->
-                         <li class="dropdown">
-                            <a class="icones-header" href="#">
+                <ul>
+                    <li><a class="links-header" href="#">Tênis</a></li>
+                    <li><a class="links-header" href="#">Novidades</a></li>
+                    <li><a class="links-header" href="#">Acessórios</a></li>
+                    <li><a class="links-header" href="#">Marcas</a></li>
+
+                    <!-- DROPDOWN -->
+                    <li class="dropdown">
+                        <a class="icones-header" href="#">
                             <i class='bx bxs-user'></i>
-                            </a>
-                            <div class="caixa-dropdwn">
-                                <p>[NOME]</p>
-                                <a href="#"><i class='bx bx-user'></i>  Meu perfil</a>
-                                <a href="#"><i class='bx bxs-cart'></i>  Carrinho</a>
-                                <a href="#"><i class='bx bx-help-circle'></i> Ajuda e Suporte</a>
-                                <a href="#"><i class='bx bx-log-out'></i> Sair</a>
-                            </div>
-                        </li>
-                        <li><a class="icones-header" href="#"><i class='bx bxs-heart'></i></a></li>
-                        <li><a class="icones-header" href="#"><i class='bx bxs-shopping-bag'></i></a></li>
-                    </ul>
+                        </a>
+                        <div class="caixa-dropdwn">
+                            <p>[NOME]</p>
+                            <a href="#"><i class='bx bx-user'></i> Meu perfil</a>
+                            <a href="#"><i class='bx bxs-cart'></i> Carrinho</a>
+                            <a href="#"><i class='bx bx-help-circle'></i> Ajuda e Suporte</a>
+                            <a href="#"><i class='bx bx-log-out'></i> Sair</a>
+                        </div>
+                    </li>
+                    <li><a class="icones-header" href="#"><i class='bx bxs-heart'></i></a></li>
+                    <li><a class="icones-header" href="#"><i class='bx bxs-shopping-bag'></i></a></li>
+                </ul>
             </nav> <!-- fim - nav - header -->
         </div> <!-- fim - inicio div/caixa organizadora - header-top -->
     </header> <!-- FIM DO CABEÇALHO-->
 
+    <!-- LOCALIZAÇÃO  -->
     <div class="localizacao">
         <img src="../assets/images/tela-comprar/localizacao.png" alt="Foto localização">
         <p>Informa sua localização</p>
         <p>Digite seu CEP</p>
-    </div>
+    </div> <!-- FIM LOCALIZAÇÃO-->
 
-    
-        <div class="input-cep">
-            <input type="number" placeholder="Digite Seu CEP:">
-            <button>Buscar</button>   
-            <img src="../assets/images/tela-comprar/apagar.png" alt="Foto-apagar">
-        </div> 
-    
-    
-    <div>
+    <!-- INPUT - DIGITAR CEP  -->
+    <div class="input-cep">
+        <input type="text" placeholder="00000-000" maxlength="8">
+        <button>Buscar</button>
+        <img src="../assets/images/tela-comprar/apagar.png" alt="Foto-apagar">
+    </div> <!-- FIM INPUT - DIGITAR CEP-->
+
+    <!-- LADO-ESQUERDO -->
+    <div class="lado-esquerdo">
         <img src="../assets/images/tela-comprar/tenis-comprar.png" alt="Foto-tenis">
-        <div>
-            <h3>TÊNIS ADIDAS GALAXY 7 - MASCULINO </h3>
-            <p>R$ 359,99</p> 
-            <p>R$ 399,99</p>
-            <p>10% OFF </p>
-            <p>ou 2x de R$ 189,99 sem juros</p>
-        </div>
-        
-    
-    <div class="imagem pequena tenis">
-        <img src ="../assets/images/tela-comprar/tenis-selecionado.png" alt="Sua imagem não carregou">
-    </div>
-    
-    <div class = "tamanho do tenis">
-        <button class="escolher-tamanho" type="button">38</button>
-        <button class="e-tamanho" type="button">39</button>
-        <button class="botao-tamanho" type="button">40</button>
-    </div>
+    </div> <!-- FIM LADO-ESQUERDO -->
 
-    <div class="add carrinho">
-        <button class="adicionar-carrinho" type="button">Adicionar ao carrinho <i class='bx bx-right-arrow-alt'></i></button>
-    </div>
+    <!-- LADO-DIREITO -->
+    <div class="lado-direito">
+        <h3>TÊNIS ADIDAS GALAXY 7 - MASCULINO </h3>
 
+        <!-- PRECO -->
+        <div class="preco">
+            <span class="preco-atual">R$ 359,99</span>
+            <span class="preco-riscado">R$ 399,99</span>
+            <span class="desconto">10% OFF</span>
+        </div> <!-- FIM PRECO-->
+        <p>ou 2x de R$ 189,99 sem juros</p>
 
+        <!-- IMG-TENIS-SELECIONADO -->
+        <div class="tenis-selecionado">
+            <img src="../assets/images/tela-comprar/tenis-selecionado.png" alt="Sua imagem não carregou">
+        </div> <!-- FIM IMG-TENIS-SELECIONADO -->
+
+        <!-- ESCOLHER TAMANHO DO TENIS -->
+        <div class="tamanho-tenis">
+            <button class="btn-num">38</button>
+            <button class="btn-num">39</button>
+            <button class="btn-num"">40</button>
+        </div> <!-- FIM ESCOLHER TAMANHO DO TENIS-->
+
+        <!-- BOTAO ADICIONAR AO CARRINHO -->
+        <div class=" add-carrinho">
+            <button class="btn-adicionar">
+                Adicionar ao carrinho<i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </div> <!-- FIM BOTAO ADICIONAR AO CARRINHO -->
+    </div> <!-- FIM LADO-DIREITO -->
 </body>
 </html>
