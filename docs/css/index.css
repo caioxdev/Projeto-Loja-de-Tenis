@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&family=Bebas+Neue&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --cor-fundo: #fff;
+    --cor-texto: #000;
+    --cor-btn-topo: #004EC4;
+    --cor-btn-compra-cartao: #003789;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../assets/images/header/foto-banner-topo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1920 / 970;
+    position: relative;
+    z-index: -1;
+}
