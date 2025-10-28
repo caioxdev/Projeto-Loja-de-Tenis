@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&family=Bebas+Neue&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --cor-principal: #fff;
+    --cor-secundaria: #F2F2F2;
+    --cor-texto: #000;
+}
+
+body {
+    background-color: var(--cor-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.input-box {
+    position: relative;
+    margin-top: 30px;
+}
+
+.input-box input {
+    width: 240px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    background: var(--cor-secundaria);
+    backdrop-filter: blur(4.8px);
+    color: var(--cor-texto);
+    outline: none;
+    padding: 0 40px;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.input-box i {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 27px;
+    color: #707984;
+}
+
+.nav-header {
+    margin-top: 30px;
+}
+
+.nav-header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.links-header {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+    display: inline-block;
+    transition: transform .3s ease-out;
+}
+
+.links-header:hover {
+    transform: scale(1.2);
+}
+
+.icones-header {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+}
+
+.dropdown .links-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color .3s ease;
+}
+
+.dropdown .links-dropdown:hover {
+    background-color: #c7c7c763;
+}
+
+.dropdown .caixa-dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-secundaria);
+    min-width: 180px;
+    padding: 15px 0;
+}
+
+.caixa-dropdown p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.caixa-dropdown i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dropdown:hover .caixa-dropdown {
+    display: block;
+}
+
+.container-localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 255px;
+    margin-top: 78px;
+}
+
+.container-localizacao img {
+    width: 56px;
+    height: 50px;
+}
+
+.localizacao {
+    display: flex;
+    gap: 10px;
+}
+
+.texto-localizacao {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-texto);
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.texto-localizacao #digite-cpf {
+    color: #686868;
+    font-size: 16px;
+}
+
+.input-cep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.input-cep input {
+    width: 250px;
+    height: 35px;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    border: none;
+    color: #bdbdbd;
+    font-size: 15px;
+    padding: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.input-cep #btn-buscar {
+    width: 90px;
+    height: 35px;
+    background-color: #000;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2 linear;
+}
+
+.input-cep #btn-buscar:hover {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+.input-cep img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.container-comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 28px;
+}
+
+.lado-esquerdo {
+    max-width: 605px;
+    height: 700px;
+    background-color: var(--cor-secundaria);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    width: 590px;
+    height: 700px;
+    border-radius: 12px;
+    background-color: var(--cor-secundaria);
+}
+
+.content-lado-direito {
+    padding: 77px 60px 90px 33px;
+}
+
+.content-lado-direito h3 {
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.container-preco {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 10px;
+}
+
+.preco-atual {
+    color: var(--cor-texto);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.preco-riscado {
+    color: #8b8b8b;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.desconto {
+    color: #0d7e02;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    width: 77px;
+    height: 32px;
+    background-color: #a9ea96;
+    border-radius: 10px;
+    padding: 8px
+}
+
+.parcelar {
+    color: #8b8b8b;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.tamanho-tenis {
+    display: flex;
+    gap: 15px;
+    margin-top: 48px;
+}
+
+.btn-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1.5px solid #a8a8aa;
+    color: #a8a8a8;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+.btn-num:hover {
+    color: var(--cor-texto);
+    border: 1.5px solid black;
+}
+
+.btn-selecionado {
+    color: var(--cor-texto);
+    border: 1.5px solid black;
+}
+
+.btn-adicionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 421px;
+    height: 55px;
+    background-color: black;
+    border: none;
+    gap: 8px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.btn-adicionar i {
+    font-size: 30px;
+}
+
+.btn-wrap {
+    display: block;
+    position: relative;
+}
+
+.btn-wrap::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 418px;
+    height: 45px;
+    top: 15px;
+    left: 6px;
+    z-index: 0;
+    transition: all 0.2s ease;
+}
+
+.btn-adicionar:active{
+    transform: translate(6.6px, 9px);
+}
+
+.btn-wrap:hover::after {
+    border-color: rgba(0, 0, 0, 0.432);
+}

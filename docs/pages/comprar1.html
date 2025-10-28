@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/pages/compra1.css">
     <title>Adidas - Kicompras</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <header>
         <div class="header-top"> <!-- inicio - div/caixa organizadora - header-top -->
             <div class="logo"> <!-- inicio - div - logo-->
-                <a href="../index.html">
+                <a href="index.html">
                     <img src="../assets/images/tela-comprar/Kichutes.png" alt="Logo">
                 </a>
             </div> <!-- fim - div - logo-->
@@ -28,15 +29,13 @@
 
                     <!-- DROPDOWN -->
                     <li class="dropdown">
-                        <a class="icones-header" href="#">
-                            <i class='bx bxs-user'></i>
-                        </a>
-                        <div class="caixa-dropdwn">
+                        <a class="icones-header" href="#"><i class='bx bxs-user'></i></a>
+                        <div class="caixa-dropdown">
                             <p>[NOME]</p>
-                            <a href="#"><i class='bx bx-user'></i> Meu perfil</a>
-                            <a href="#"><i class='bx bxs-cart'></i> Carrinho</a>
-                            <a href="#"><i class='bx bx-help-circle'></i> Ajuda e Suporte</a>
-                            <a href="#"><i class='bx bx-log-out'></i> Sair</a>
+                            <a href="#" class="links-dropdown"><i class="bi bi-person-fill"></i> Meu perfil</a>
+                            <a href="#" class="links-dropdown"><i class="bi bi-cart-fill"></i> Carrinho</a>
+                            <a href="#" class="links-dropdown"><i class="bi bi-question-lg"></i> Ajuda e Suporte</a>
+                            <a href="#" class="links-dropdown"><i class="bi bi-box-arrow-left"></i> Sair</a>
                         </div>
                     </li>
                     <li><a class="icones-header" href="#"><i class='bx bxs-heart'></i></a></li>
@@ -46,55 +45,58 @@
         </div> <!-- fim - inicio div/caixa organizadora - header-top -->
     </header> <!-- FIM DO CABEÇALHO-->
 
+
     <!-- LOCALIZAÇÃO  -->
-    <div class="localizacao">
-        <img src="../assets/images/tela-comprar/localizacao.png" alt="Foto localização">
-        <p>Informa sua localização</p>
-        <p>Digite seu CEP</p>
-    </div> <!-- FIM LOCALIZAÇÃO-->
+    <section class="container-localizacao">
+        <div class="localizacao">
+            <img src="../assets/images/tela-comprar/localizacao.png" alt="Foto localização">
+            <div class="texto-localizacao">
+                <p>Informa sua localização</p>
+                <p id="digite-cpf">Digite seu CEP</p>
+            </div>
+        </div> <!-- FIM LOCALIZAÇÃO-->
+        <!-- INPUT - DIGITAR CEP  -->
+        <div class="input-cep">
+            <input type="text" placeholder="00000-000" maxlength="8">
+            <button id="btn-buscar">Buscar</button>
+            <img src="../assets/images/tela-comprar/apagar.svg" alt="Foto-apagar">
+        </div> <!-- FIM INPUT - DIGITAR CEP-->
+    </section>
 
-    <!-- INPUT - DIGITAR CEP  -->
-    <div class="input-cep">
-        <input type="text" placeholder="00000-000" maxlength="8">
-        <button>Buscar</button>
-        <img src="../assets/images/tela-comprar/apagar.png" alt="Foto-apagar">
-    </div> <!-- FIM INPUT - DIGITAR CEP-->
-
-    <!-- LADO-ESQUERDO -->
-    <div class="lado-esquerdo">
-        <img src="../assets/images/tela-comprar/tenis-comprar.png" alt="Foto-tenis">
-    </div> <!-- FIM LADO-ESQUERDO -->
-
-    <!-- LADO-DIREITO -->
-    <div class="lado-direito">
-        <h3>TÊNIS ADIDAS GALAXY 7 - MASCULINO </h3>
-
-        <!-- PRECO -->
-        <div class="preco">
-            <span class="preco-atual">R$ 359,99</span>
-            <span class="preco-riscado">R$ 399,99</span>
-            <span class="desconto">10% OFF</span>
-        </div> <!-- FIM PRECO-->
-        <p class="parcelar">ou 2x de R$ 189,99 sem juros</p>
-
-        <!-- IMG-TENIS-SELECIONADO -->
-        <div class="tenis-selecionado">
-            <img src="../assets/images/tela-comprar/tenis-selecionado.png" alt="Tênis selecionado">
-        </div> <!-- FIM IMG-TENIS-SELECIONADO -->
-
-        <!-- ESCOLHER TAMANHO DO TENIS -->
-        <div class="tamanho-tenis">
-            <button class="btn-num">38</button>
-            <button class="btn-num">39</button>
-            <button class="btn-num">40</button>
-        </div> <!-- FIM ESCOLHER TAMANHO DO TENIS-->
-
-        <!-- BOTAO ADICIONAR AO CARRINHO -->
-        <div class="add-carrinho">
-            <button class="btn-adicionar">
-                Adicionar ao carrinho<i class='bx bx-right-arrow-alt'></i>
-            </button>
-        </div> <!-- FIM BOTAO ADICIONAR AO CARRINHO -->
-    </div> <!-- FIM LADO-DIREITO -->
+    <section class="container-comprar">
+        <!-- LADO-ESQUERDO -->
+        <div class="lado-esquerdo">
+            <img src="../assets/images/tela-comprar/tenis-comprar.png" alt="Foto-tenis">
+        </div> <!-- FIM LADO-ESQUERDO -->
+        <!-- LADO-DIREITO -->
+        <div class="lado-direito">
+            <div class="content-lado-direito">
+                <h3>TÊNIS ADIDAS GALAXY 7 - MASCULINO </h3>
+                <!-- PRECO -->
+                <div class="container-preco">
+                    <span class="preco-atual">R$ 359,99</span>
+                    <span class="preco-riscado">R$ 399,99</span>
+                    <span class="desconto">10% OFF</span>
+                </div> <!-- FIM PRECO-->
+                <p class="parcelar">ou 2x de R$ 189,99 sem juros</p>
+                <!-- IMG-TENIS-SELECIONADO -->
+                <div class="tenis-selecionado">
+                    <img src="../assets/images/tela-comprar/tenis-selecionado.png" alt="Tênis selecionado">
+                </div> <!-- FIM IMG-TENIS-SELECIONADO -->
+                <!-- ESCOLHER TAMANHO DO TENIS -->
+                <div class="tamanho-tenis">
+                    <button class="btn-num">38</button>
+                    <button class="btn-num">39</button>
+                    <button class="btn-num btn-selecionado">40</button>
+                </div> <!-- FIM ESCOLHER TAMANHO DO TENIS-->
+                <!-- BOTAO ADICIONAR AO CARRINHO -->
+                <div class="btn-wrap">
+                    <button class="btn-adicionar">
+                        Adicionar ao carrinho<i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                </div> <!-- FIM BOTAO ADICIONAR AO CARRINHO -->
+            </div>
+        </div> <!-- FIM LADO-DIREITO -->
+    </section>
 </body>
 </html>
