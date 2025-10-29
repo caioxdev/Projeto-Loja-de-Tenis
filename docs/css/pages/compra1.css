@@ -1,21 +1,26 @@
+/* IMPORTAÇÕES */
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&family=Bebas+Neue&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;700&display=swap');
 
+/* VARIÁVEIS */
 :root {
     --cor-principal: #fff;
     --cor-secundaria: #F2F2F2;
     --cor-texto: #000;
 }
 
+/* BODY */
 body {
     background-color: var(--cor-principal);
 }
 
+/* RESET GLOBAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* HEADER */
 .header-top {
     display: flex;
     justify-content: center;
@@ -133,8 +138,9 @@ body {
 
 .dropdown:hover .caixa-dropdown {
     display: block;
-}
+} /* FIM HEADER*/
 
+/* LOCALIZAÇÃO */
 .container-localizacao {
     display: flex;
     justify-content: center;
@@ -165,8 +171,9 @@ body {
 .texto-localizacao #digite-cpf {
     color: #686868;
     font-size: 16px;
-}
+} /* FIM LOCALIZAÇÃO */
 
+/* CEP */
 .input-cep {
     display: flex;
     justify-content: center;
@@ -211,8 +218,9 @@ body {
     width: 16px;
     height: 16px;
     cursor: pointer;
-}
+} /* FIM CEP */
 
+/* COMPRAR - LADO ESQUERDO E DIREITO */
 .container-comprar {
     display: flex;
     justify-content: center;
@@ -370,4 +378,4 @@ body {
 
 .btn-wrap:hover::after {
     border-color: rgba(0, 0, 0, 0.377);
-}
+} /*  FIM COMPRAR - LADO ESQUERDO E DIREITO */
