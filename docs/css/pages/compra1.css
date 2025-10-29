@@ -35,7 +35,7 @@ body {
 .input-box input {
     width: 240px;
     height: 35px;
-    border-radius: 12px;
+    border-radius: 8px;
     border: none;
     background: var(--cor-secundaria);
     backdrop-filter: blur(4.8px);
@@ -180,6 +180,7 @@ body {
     background-color: var(--cor-secundaria);
     border-radius: 5px;
     border: none;
+    outline: none;
     color: #bdbdbd;
     font-size: 15px;
     padding: 20px;
@@ -368,5 +369,5 @@ body {
 }
 
 .btn-wrap:hover::after {
-    border-color: rgba(0, 0, 0, 0.432);
+    border-color: rgba(0, 0, 0, 0.377);
 }

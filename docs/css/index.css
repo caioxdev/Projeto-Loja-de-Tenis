@@ -51,7 +51,7 @@ header {
 .input-box input {
     width: 240px;
     height: 35px;
-    border-radius: 12px;
+    border-radius: 8px;
     border: none;
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(4.8px);
