@@ -455,6 +455,10 @@ btn-comprar {
     z-index: 1;
 }
 
+.btn-comprar-air {
+    margin-top: 38px;
+}
+
 .btn-wrap {
     display: block;
     position: absolute;
@@ -474,6 +478,10 @@ btn-comprar {
     transition: all 0.2s ease;
 }
 
+.btn-wrap:hover::after {
+    border-color: rgb(121, 120, 120);
+}
+
 .cards-vendidos a {
     display: flex;
     align-items: center;
@@ -485,6 +493,7 @@ btn-comprar {
     display: flex;
     text-align: left;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 
@@ -537,6 +546,15 @@ btn-comprar {
 } /* FIM MAIS VENDIDOS*/
 
 /* CATEGORIAS EM DESTAQUE */
+
+.titulo-categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+    margin-bottom: 56px;
+}
+
 #container-categorias h2 {
     color: #000;
     font-family: Poppins;
@@ -548,6 +566,7 @@ btn-comprar {
 #container-categorias {
     margin-top: 100px;
     margin-left: 80px;
+    
 }
 
 .cards-categorias {
@@ -559,7 +578,7 @@ btn-comprar {
     text-align: center;
 }
 
-.cards-categorias > div {
+.cards-categorias  div {
     display: flex;
     width: 230px;
     height: 230px;
@@ -569,11 +588,8 @@ btn-comprar {
 }
 
 #seta-categorias {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1550px;
-    margin-left: -20px;
+    display: flex;
+    gap: 12px;
 }
 
 #seta-categorias button {
@@ -585,7 +601,7 @@ btn-comprar {
 #seta-categorias img {
     width: 45px;
     height: 45px;
-    transform: translateY(130px);
+    
 } /* FIM CATEGORIAS EM DESTAQUE*/
 
 /* FOOTER */
