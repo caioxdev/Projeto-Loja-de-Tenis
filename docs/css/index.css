@@ -134,7 +134,7 @@ header {
     padding: 15px 0;
 }
 
-.caixa-dropdown p {
+.caixa-dropdown p { 
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -388,6 +388,12 @@ header {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+    .cards-vendidos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 btn-comprar {
