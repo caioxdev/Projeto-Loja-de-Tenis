@@ -28,6 +28,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 100vh;
     aspect-ratio: 16 / 9;
 }
 
@@ -163,8 +164,8 @@ header {
     width: 669px;
     height: 465px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 58%;
+    left: 51%;
     transform: translate(-50%, -50%);
 }
 
@@ -189,24 +190,28 @@ header {
     font-family: Alexandria;
     font-size: 20px;
     font-weight: 400;
-    margin: 35px 0;
+    margin: 2rem 0;
     margin-left: 50px;
 }
 
-#texto-topo .botao-1 {
+#texto-topo .botao-1,
+#texto-topo .botao-2 {
     width: 130px;
     height: 35px;
-    background: var(--cor-btn-topo);
-    box-shadow: -2px 2px 250px 20px #004EC4;
-    color: #fff;
-    border: none;
     border-radius: 15px;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+#texto-topo .botao-1 {
+    background: var(--cor-btn-topo);
+    box-shadow: -2px 2px 250px 20px #004EC4;
+    color: #fff;
+    border: none;
     margin-left: 145px;
     margin-right: 15px;
-    cursor: pointer;
 }
 
 #texto-topo .botao-2 {
@@ -219,7 +224,6 @@ header {
     font-family: Poppins;
     font-size: 15px;
     font-weight: 500;
-    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -228,17 +232,21 @@ header {
     background-color: var(--cor-btn-topo);
 }
 
-#container-banner-topo {
-    position: relative; 
-    bottom: 180px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+.container-banner-topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -180px;
+}
+#content-banner {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 715px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 715px;
     height: 115px;
-    padding: 0 60px;
+    padding: 1.5rem;
     border-radius: 15px;
     background: #FFF;
     box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -255,33 +263,33 @@ header {
     flex-direction: column;
 }
 
-#container-banner-topo .left .p1-left {
+#content-banner .left .p1-left {
     color: #003789;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
 }
 
-#container-banner-topo .left .p2-left {
+#content-banner  .left .p2-left {
     color: #003789;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
 }
 
-#container-banner-topo .left, .right i {
+#content-banner  .left, .right i {
     color: #003789;
     font-size: 40px;
 }
 
-#container-banner-topo .right .p1-right {
+#content-banner  .right .p1-right {
     color: #003789;
     font-family: Poppins;
     font-size: 18px;
     font-weight: 700;
 }
 
-#container-banner-topo .right .p2-right {
+#content-banner o .right .p2-right {
     color: #003789;
     font-family: Poppins;
     font-size: 15px;
@@ -341,6 +349,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 } /* FIM MARCAS*/
 
 /* MAIS VENDIDOS */
@@ -398,7 +407,7 @@ header {
     }
 }
 
-btn-comprar {
+.btn-comprar {
   position: relative;
   z-index: 1;
   display: inline-flex;
@@ -426,7 +435,6 @@ btn-comprar {
     top: 20px;
     right: 20px;
     font-size: 25px;
-    cursor: pointer;
 }
 
 .cards-vendidos i {
@@ -521,37 +529,16 @@ btn-comprar {
     background: linear-gradient(358deg, #F2F2F2 33.21%, #EBE9E9 87.17%);
 }
 
-.card1 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-}
-
-.card2 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    height: 360px;
-}
-
-.card3 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-}
-
+.card1 img,
+.card2 img,
+.card3 img,
 .card4 img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 350px;
     height: 350px;
-} /* FIM MAIS VENDIDOS*/
+}  /* FIM MAIS VENDIDOS*/
 
 /* CATEGORIAS EM DESTAQUE */
 
