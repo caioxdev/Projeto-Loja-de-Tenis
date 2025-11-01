@@ -45,6 +45,8 @@ body {
     background: var(--cor-secundaria);
     backdrop-filter: blur(4.8px);
     color: var(--cor-texto);
+    font-family: Poppins;
+    font-weight: 500;
     outline: none;
     padding: 0 40px;
     font-size: 16px;
@@ -116,6 +118,7 @@ body {
     background-color: var(--cor-secundaria);
     min-width: 180px;
     padding: 15px 0;
+    z-index: 1;
 }
 
 .caixa-dropdown p {
@@ -157,6 +160,8 @@ body {
 .localizacao {
     display: flex;
     gap: 10px;
+    position: relative;
+    right: 120px;
 }
 
 .texto-localizacao {
@@ -179,6 +184,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 23px;
+    position: relative;
+    right: 25px;
 }
 
 .input-cep input {
