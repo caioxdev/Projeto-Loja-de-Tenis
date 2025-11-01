@@ -377,9 +377,13 @@ body {
 }
 
 .btn-wrap:hover::after {
-    border-color: rgba(0, 0, 0, 0.377);
+    border-color: rgba(170, 168, 168, 0.582);
 } /*  FIM COMPRAR - LADO ESQUERDO E DIREITO */
 
 .voltar {
     margin-left: 20px;
+    transition: all .2s ease;
+}
+.voltar:hover {
+    transform: scale(0.85);
 }
