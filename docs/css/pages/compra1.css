@@ -32,6 +32,7 @@ body {
     margin-top: 30px;
 }
 
+/* INPUT-BOX*/
 .input-box {
     position: relative;
     margin-top: 30px;
@@ -61,8 +62,9 @@ body {
     transform: translateY(-50%);
     font-size: 27px;
     color: #707984;
-}
+} /* FIM INPUT-BOX */
 
+/* NAV-HEADER */
 .nav-header {
     margin-top: 30px;
 }
@@ -72,8 +74,9 @@ body {
     align-items: center;
     list-style: none;
     gap: 30px;
-}
+} /* FIM NAV-HEADER */
 
+/* LINKS-HEADER */
 .links-header {
     text-decoration: none;
     color: var(--cor-texto);
@@ -86,15 +89,17 @@ body {
 }
 
 .links-header:hover {
-    transform: scale(1.2);
-}
+    transform: scale(1.25);
+} /* FIM LINKS-HEADER */
 
+/* ÍCONES-HEADER */
 .icones-header {
     text-decoration: none;
     font-size: 25px;
     color: #000;
-}
+} /* FIM ÍCONES-HEADER*/
 
+/* DROPDOWN */
 .dropdown .links-dropdown {
     display: flex;
     align-items: center;
@@ -141,10 +146,12 @@ body {
 
 .dropdown:hover .caixa-dropdown {
     display: block;
-} /* FIM HEADER*/
+} /* FIM DROPDOWN */
+/* FIM HEADER */
 
-/* LOCALIZAÇÃO */
-.container-localizacao {
+/* CEP */
+/* CONTAINER-CEP */
+.container-cep {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,12 +159,22 @@ body {
     margin-top: 78px;
 }
 
-.container-localizacao img {
+/* SETA VOLTAR */
+.voltar {
+    margin-left: 20px;
+    transition: all .2s ease;
+}
+.voltar:hover {
+    transform: scale(0.85);
+} /* FIM SETA VOLTAR*/
+
+.container-cep img {
     width: 56px;
     height: 50px;
-}
+} /* FIM CONTAINER-CEP*/
 
-.localizacao {
+/* CONTENT-LOCALIZACAO */
+.content-localizacao {
     display: flex;
     gap: 10px;
     position: relative;
@@ -176,9 +193,9 @@ body {
 .texto-localizacao #digite-cpf {
     color: #686868;
     font-size: 16px;
-} /* FIM LOCALIZAÇÃO */
+} /* FIM CONTENT-LOCALIZACAO */
 
-/* CEP */
+/* INPUT-CEP*/
 .input-cep {
     display: flex;
     justify-content: center;
@@ -225,9 +242,9 @@ body {
     width: 16px;
     height: 16px;
     cursor: pointer;
-} /* FIM CEP */
+} /* FIM INPUT- CEP */
 
-/* COMPRAR - LADO ESQUERDO E DIREITO */
+/* CONTAINER - COMPRAR */
 .container-comprar {
     display: flex;
     justify-content: center;
@@ -236,6 +253,7 @@ body {
     gap: 28px;
 }
 
+/* LADO ESQUERDO */
 .lado-esquerdo {
     max-width: 605px;
     height: 700px;
@@ -244,8 +262,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} /* FIM LADO ESQUERDO */
 
+/* LADO DIREITO */
 .lado-direito {
     display: flex;
     flex-direction: column;
@@ -253,8 +272,9 @@ body {
     height: 700px;
     border-radius: 12px;
     background-color: var(--cor-secundaria);
-}
+} /* FIM LADO DIREITO */
 
+/* CONTENT LADO DIREITO */
 .content-lado-direito {
     padding: 77px 60px 90px 33px;
 }
@@ -266,13 +286,15 @@ body {
     font-size: 32px;
     margin-bottom: 50px;
 }
+/* FIM CONTENT LADO DIREITO */
 
+/* CONTAINER-PRECO */
 .container-preco {
     display: flex;
     align-items: center;
     gap: 22px;
     margin-bottom: 10px;
-}
+} 
 
 .preco-atual {
     color: var(--cor-texto);
@@ -308,13 +330,16 @@ body {
     font-weight: 400;
     margin-bottom: 40px;
 }
+/* FIM CONTAINER-PRECO */
 
-.tamanho-tenis {
+/* CONTAINER - BTN - NUM */
+.container-btn-num {
     display: flex;
     gap: 15px;
     margin-top: 48px;
 }
 
+/* BTN - NUM */
 .btn-num {
     width: 30px;
     height: 30px;
@@ -330,13 +355,16 @@ body {
 .btn-num:hover {
     color: var(--cor-texto);
     border: 1.5px solid black;
-}
+} /* FIM BTN - NUM */
 
+/* BTN-NUM QUANDO ESTIVER SELECIONADO */
 .btn-selecionado {
     color: var(--cor-texto);
     border: 1.5px solid black;
-}
+} /* FIM BTN-NUM QUANDO ESTIVER SELECIONADO */
+/* FIM CONTAINER - BTN - NUM */
 
+/* BTN - ADICIONAR */
 .btn-adicionar {
     display: flex;
     justify-content: center;
@@ -360,6 +388,11 @@ body {
     font-size: 30px;
 }
 
+.btn-adicionar:active{
+    transform: translate(6.6px, 9px);
+} /* FIM BTN - ADICIONAR */
+
+/* BTN-WRAP */
 .btn-wrap {
     display: block;
     position: relative;
@@ -379,18 +412,7 @@ body {
     transition: all 0.2s ease;
 }
 
-.btn-adicionar:active{
-    transform: translate(6.6px, 9px);
-}
-
 .btn-wrap:hover::after {
     border-color: rgba(170, 168, 168, 0.582);
-} /*  FIM COMPRAR - LADO ESQUERDO E DIREITO */
-
-.voltar {
-    margin-left: 20px;
-    transition: all .2s ease;
-}
-.voltar:hover {
-    transform: scale(0.85);
-}
+} /* FIM BTN-WRAP*/
+/*  FIM CONTAINER - COMPRAR*/
