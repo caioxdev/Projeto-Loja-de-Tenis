@@ -447,7 +447,7 @@ header {
     transform: translate(10px,-10px)
 }
 
-.cards-vendidos button {
+.btn-comprar {
     width: 250px;
     height: 35px;
     border: none;
@@ -459,6 +459,11 @@ header {
     margin-top: 40px;
     position: relative;
     z-index: 1;
+    transition: transform .1s ease-out;
+}
+
+.btn-comprar:active {
+    transform: translate(8px, 6.8px);
 }
 
 .btn-comprar-air {
@@ -467,7 +472,7 @@ header {
 
 .btn-wrap {
     display: block;
-    position: absolute;
+    position: absolute;   
 }
 
 .btn-wrap::after {
