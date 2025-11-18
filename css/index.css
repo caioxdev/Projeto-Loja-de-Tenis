@@ -106,6 +106,7 @@ header {
     color: #fff;
 }
 
+/* DROPDOWN */
 .dropdown .links-dropdown {
     display: flex;
     align-items: center;
@@ -151,7 +152,8 @@ header {
 
 .dropdown:hover .caixa-dropdown {
     display: block;
-} /* FIM HEADER*/
+} /* FIM DROPDOWN*/ 
+/* FIM HEADER*/
 
 /* EMBAIXO DO HEADER */
 #texto-topo {
@@ -357,6 +359,33 @@ header {
     margin-bottom: 100px;
 }
 
+.card1 {
+    background: linear-gradient(0deg, #FFF 38.38%, #8BCEDB 83.19%);
+}
+
+.card2 {
+    background: linear-gradient(358deg, #FFF 33.21%, #C1C4C9 87.17%);
+}
+
+.card3 {
+    background: linear-gradient(0deg, #FFF 38.38%, #E6815C 83.19%);
+}
+
+.card4 {
+    background: linear-gradient(358deg, #F2F2F2 33.21%, #EBE9E9 87.17%);
+}
+
+.card1 img,
+.card2 img,
+.card3 img,
+.card4 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+} 
+
 .titulo-vendidos {
     display: flex;
     justify-content: space-between;
@@ -401,28 +430,6 @@ header {
     max-width: 100%;
 }
 
-.btn-comprar {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 8px 20px;
-  height: 40px;
-  min-width: 145px;
-  background: #000;
-  color: #fff;
-  border: none;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn-comprar i {
-  font-size: 20px;
-  color: #fff;
-}
-
 .cards-vendidos .coracao-icone {
     position: absolute;
     color: #000;
@@ -447,6 +454,20 @@ header {
     transform: translate(10px,-10px)
 }
 
+.cards-vendidos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cards-vendidos p {
+    display: flex;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
 .btn-comprar {
     width: 250px;
     height: 35px;
@@ -466,10 +487,13 @@ header {
     transform: translate(8px, 6.8px);
 }
 
-.btn-comprar-air {
-    margin-top: 38px;
-}
+/* ICONE SETA */
+.btn-comprar i {
+  font-size: 20px;
+  color: #fff;
+} 
 
+/* BOTAO EMBAIXO DO PRINCIPAL */
 .btn-wrap {
     display: block;
     position: absolute;   
@@ -491,49 +515,13 @@ header {
 
 .btn-wrap:hover::after {
     border-color: rgb(121, 120, 120);
-}
+} /* FIM BOTAO EMBAIXO DO PRINCIPAL*/
 
-.cards-vendidos a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.cards-vendidos p {
-    display: flex;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-
-.card1 {
-    background: linear-gradient(0deg, #FFF 38.38%, #8BCEDB 83.19%);
-}
-
-.card2 {
-    background: linear-gradient(358deg, #FFF 33.21%, #C1C4C9 87.17%);
-}
-
-.card3 {
-    background: linear-gradient(0deg, #FFF 38.38%, #E6815C 83.19%);
-}
-
-.card4 {
-    background: linear-gradient(358deg, #F2F2F2 33.21%, #EBE9E9 87.17%);
-}
-
-.card1 img,
-.card2 img,
-.card3 img,
-.card4 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 350px;
-}  /* FIM MAIS VENDIDOS*/
+/* BOTAO CARD AIR FORCE */
+.btn-comprar-air-force {
+    margin-top: 38px;
+} 
+/* FIM MAIS VENDIDOS*/
 
 /* CATEGORIAS EM DESTAQUE */
 
