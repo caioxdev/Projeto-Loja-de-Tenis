@@ -257,16 +257,18 @@ header {
     flex-direction: column;
 }
 
-#content-banner .left .p1-left {
+#content-banner .left .p1-left,
+#content-banner .left .p2-left {
     color: #003789;
     font-family: Poppins;
+}
+
+#content-banner .left .p1-left{
     font-size: 18px;
     font-weight: 700;
 }
 
 #content-banner  .left .p2-left {
-    color: #003789;
-    font-family: Poppins;
     font-size: 15px;
     font-weight: 400;
 }
@@ -276,16 +278,18 @@ header {
     font-size: 40px;
 }
 
-#content-banner  .right .p1-right {
+#content-banner  .right .p1-right,
+#content-banner .right .p2-right {
     color: #003789;
     font-family: Poppins;
+}
+
+#content-banner .right .p1-right {
     font-size: 18px;
     font-weight: 700;
 }
 
-#content-banner o .right .p2-right {
-    color: #003789;
-    font-family: Poppins;
+#content-banner .right .p2-right {
     font-size: 15px;
     font-weight: 400;
 } /* FIM EMBAIXO HEADER*/
@@ -425,10 +429,6 @@ header {
     top: 20px;
     right: 20px;
     font-size: 25px;
-}
-
-.cards-vendidos i {
-    position: static;
 }
 
 .cards-vendidos article {
