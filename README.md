@@ -1,8 +1,4 @@
 # Projeto de Loja de Tênis
-
-> ⚠️ Esse projeto foi feito apenas com estudo de HTML E CSS, com foco em treinar layout,  
-> e organização de pastas.
-> Ainda está em desenvolvimento e poderá receber melhorias na parte de JavaScript futuramente.
 ---
 ## Sobre o Projeto
 
@@ -49,10 +45,9 @@ Renomeei a pasta src/ para docs/ porque o GitHub Pages só aceita como raiz de p
 
 ## Status do Projeto
 
-🚧 Em andamento: faltam alguns ajustes de posição de elementos, correções visuais e finalização de certas seções.
+🚧 Concluído
 
 ## Observações
 
 - Projeto feito para prática e aprendizado, não para produção.
-- O objetivo principal foi treinar estrutura, semântica e organização de pastas.
 - Algumas imagens e ícones foram utilizados apenas como mockup para simulação do layout.
